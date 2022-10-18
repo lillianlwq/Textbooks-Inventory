@@ -1,0 +1,150 @@
+body {
+    background-color: #edeff1;
+    font-family: sans-serif;
+}
+
+h1 { 
+    background-color:#37474f;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-indent: 22px;
+    font-weight: normal;
+}
+
+mark.orange {
+    color: #fe6e3f;
+    background: none;  
+}
+
+mark.white {
+    color:rgb(255, 255, 255);
+    background: none; 
+}
+
+.hamburger{
+    float:right;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin:0;
+    font-family: sans-serif;
+}
+
+.cardOne, .cardTwo, .cardThree, .cardFour {
+    text-align: center;
+	flex-grow: 0;
+	flex-shrink: 1;
+    flex-basis: auto;
+    background-color: white;
+    margin-left: 1rem;
+    width:350px;
+    margin-right: auto;
+}
+
+.imageOne, .imageTwo, .imageThree, .imageFour {
+    max-width: 100%;
+    display: block;
+}
+
+#bt1, #bt2, #bt3, #bt4 {
+    opacity: 0;
+    background-color: #fe6e3f;
+    color:white;
+    border-radius: 5px;
+    font-size: 15px;
+    border:0px;
+    width: 90px;
+    height:30px;
+    margin-bottom: 1rem;
+    transition: 1s ease-out;
+} 
+
+.cardOne:hover {
+    box-shadow: 0px 10px 40px;
+}
+
+.cardOne:hover #bt1{
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.cardTwo:hover {
+    box-shadow: 0px 10px 40px;
+}
+
+.cardTwo:hover #bt2{
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.cardThree:hover {
+    box-shadow: 0px 10px 40px;
+}
+
+.cardThree:hover #bt3{
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+.cardFour:hover {
+    box-shadow: 0px 10px 40px;
+}
+
+.cardFour:hover #bt4{
+    opacity: 1;
+    transition: all 2s ease-in-out;
+}
+
+#backLink {
+    color: #932022 ;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 50px;
+    position: relative;
+    top:40px;
+}
+
+@media only screen and (min-width:481px) and (max-width:770px) {
+    .cardOne, .cardTwo, .cardThree, .cardFour{
+        flex-basis: 45%;
+        margin-right: auto;
+    }
+    
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .cardOne, .cardTwo, .cardThree, .cardFour{
+        flex-basis: 100%;
+        margin-right: auto;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap:20px; 
+    }
+}
+
+@media only screen and (max-width:530px) {
+    mark.orange {
+        font-size:15px;
+    }
+
+    mark.white {
+        font-size: 15px;
+    }
+}
+
+

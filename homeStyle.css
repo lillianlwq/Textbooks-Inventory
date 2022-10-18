@@ -1,0 +1,114 @@
+
+body {
+    background-color: #edeff1;
+    font-family: sans-serif;
+}
+
+h1 { 
+    background-color:#37474f;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-indent: 22px;
+    font-weight: normal;
+}
+
+mark.orange {
+    color: #fe6e3f;
+    background: none;  
+}
+
+mark.white {
+    color:rgb(255, 255, 255);
+    background: none; 
+}
+
+img{
+    float:right;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-weight: 550;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4, h5 {
+    font-size: 20px;
+}
+
+p {
+   margin-left: 22px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    gap:50px; 
+}
+
+#Textbook{
+    flex-grow: 0;
+    flex-shrink: 0.6;
+    flex-basis: auto;
+    min-width: 250px;
+    width:450px;
+}
+
+#MainMenu {
+    flex-grow: 0;
+    flex-shrink: 0.5;
+    flex-basis: auto;
+    width: 450px;
+    min-width: 257px;;
+}
+
+#busLink {
+    color: #932022 ;
+    text-decoration: none;
+}
+
+#csLink {
+    color: #932022 ;
+    text-decoration: none;
+}
+
+#Beedie {
+    display: none;
+}
+
+#CS {
+    display: none;
+}
+
+#csLink:hover + #CS {
+    display: block;
+    overflow: visible;
+} 
+
+#busLink:hover + #Beedie {
+    display: block;
+    overflow: visible;
+}
+
+@media only screen and (max-width:550px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    mark.orange {
+        font-size:15px;
+    }
+
+    mark.white {
+        font-size: 15px;
+    }
+}
